@@ -1,0 +1,33 @@
+{
+  "name": "extract_dream_elements",
+  "description": "Extracts the core emotional, spatial, and sensory elements from a dream description.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "core_emotion": {
+        "type": "string",
+        "description": "The dominant emotion of the dream"
+      },
+      "key_spaces": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Main spatial elements or locations in the dream"
+      },
+      "sensory_details": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Important sensory information (light, sound, texture, temperature, etc.)"
+      },
+      "physical_rules": {
+        "type": "string",
+        "description": "How physics or gravity behaved in the dream"
+      },
+      "symbolic_objects": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Important objects or symbols that appeared"
+      }
+    },
+    "required": ["core_emotion", "key_spaces", "sensory_details"]
+  }
+}

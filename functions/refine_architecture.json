@@ -1,0 +1,26 @@
+{
+  "name": "refine_architecture",
+  "description": "Used when the user wants to modify the architectural reconstruction or emotional feeling of the space.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "changes_requested": {
+        "type": "string",
+        "description": "What the user wants to change"
+      },
+      "updated_form": {
+        "type": "string",
+        "description": "Updated overall form of the architecture"
+      },
+      "updated_emotional_temperature": {
+        "type": "string",
+        "description": "Updated emotional atmosphere"
+      },
+      "updated_image_prompt": {
+        "type": "string",
+        "description": "New improved image prompt after changes"
+      }
+    },
+    "required": ["changes_requested", "updated_image_prompt"]
+  }
+}

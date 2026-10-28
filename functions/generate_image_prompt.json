@@ -1,0 +1,18 @@
+{
+  "name": "generate_image_prompt",
+  "description": "Creates a highly detailed image generation prompt based on the reconstructed architecture.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "image_prompt": {
+        "type": "string",
+        "description": "A cinematic, detailed prompt that can be used to generate an image of the dream architecture"
+      },
+      "style_notes": {
+        "type": "string",
+        "description": "Recommended artistic style or mood for the image"
+      }
+    },
+    "required": ["image_prompt"]
+  }
+}

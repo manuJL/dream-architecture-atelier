@@ -1,0 +1,34 @@
+{
+  "name": "reconstruct_architecture",
+  "description": "Transforms the extracted dream elements into a detailed architectural description.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "overall_form": {
+        "type": "string",
+        "description": "The overall shape and scale of the space"
+      },
+      "materials": {
+        "type": "string",
+        "description": "Materials and textures used"
+      },
+      "lighting": {
+        "type": "string",
+        "description": "Lighting conditions and color temperature"
+      },
+      "gravity_and_physics": {
+        "type": "string",
+        "description": "How gravity and physical rules work in this space"
+      },
+      "emotional_temperature": {
+        "type": "string",
+        "description": "The emotional atmosphere of the architecture"
+      },
+      "movement": {
+        "type": "string",
+        "description": "How a person would move through this space"
+      }
+    },
+    "required": ["overall_form", "materials", "lighting", "emotional_temperature"]
+  }
+}
